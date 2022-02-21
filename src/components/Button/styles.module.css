@@ -1,0 +1,26 @@
+.button {
+  padding: 8px;
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+.primary {
+  background-color: pink;
+  color: white;
+}
+
+.secondary {
+  background-color: lightblue;
+  color: black;
+}
+
+.fullWidth {
+  width: 100%;
+}

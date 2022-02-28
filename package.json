@@ -17,8 +17,8 @@
     "test:prod": "cross-env STORYBOOK_SOURCE_ENV=prod npm run test",
     "test:static": "npm run build-storybook && cross-env STORYBOOK_SOURCE_ENV=static npm run test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -c .storybook -o storybook-build"
+    "start:storybook": "start-storybook -p 6006 -s public",
+    "build:storybook": "build-storybook -c .storybook -o storybook-build"
   },
   "eslintConfig": {
     "extends": [

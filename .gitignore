@@ -1,3 +1,4 @@
 node_modules
 build
 storybook-build
+__diff_output__

@@ -1,11 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Snapshots storyshots Core Components Button Primary 1`] = `
+exports[`Snapshots storyshots Button Button With Controls 1`] = `
+<button
+  className="button primary"
+  disabled={false}
+  onClick={[Function]}
+>
+  Test Button
+</button>
+`;
+
+exports[`Snapshots storyshots Button Primary Button 1`] = `
 <button
   className="button primary fullWidth"
   disabled={false}
   onClick={[Function]}
 >
-  Primary1
+  Primary
+</button>
+`;
+
+exports[`Snapshots storyshots Button Secondary Button 1`] = `
+<button
+  className="button secondary fullWidth"
+  disabled={false}
+  onClick={[Function]}
+>
+  Secondary
 </button>
 `;

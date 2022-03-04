@@ -7,12 +7,13 @@ module.exports = {
     'storybook-css-modules-preset',
     '@storybook/addon-storyshots-puppeteer',
     '@storybook/addon-storyshots',
-    // '@storybook/addon-storysource',
     '@storybook/addon-a11y',
+    '@storybook/source-loader',
     '@storybook/addon-docs',
     '@storybook/addon-actions',
     '@storybook/addon-controls',
-    '@storybook/addon-viewport'
+    '@storybook/addon-viewport',
+    '@storybook/source-loader',
+    '@storybook/addon-storysource'
   ],
-  framework: '@storybook/react',
 };

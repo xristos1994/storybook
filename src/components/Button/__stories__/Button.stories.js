@@ -8,18 +8,19 @@ import {
   Stories,
   PRIMARY_STORY,
 } from '@storybook/addon-docs';
+import { action } from "@storybook/addon-actions";
 import { Button } from './../Button';
 
 const story = {
   title: 'Button',
   component: Button,
   parameters: {
-    actions: {
-      handles: ['mouseover', 'click button'],
-    },
-    argTypes: {
-      children: { control: 'text' },
-    },
+    // actions: {
+    //   handles: ['mouseover', 'click button'],
+    // },
+    // argTypes: {
+    //   children: { control: 'text' },
+    // },
     docs: {
       page: () => (
         <>
@@ -52,7 +53,15 @@ ButtonWithControls.args = {
   children: 'Test Button'
 };
 
-ButtonWithControls.parameters = { controls: { exclude: ['onClick'] } }
+ButtonWithControls.parameters = {
+  controls: { exclude: ['onClick'] },
+  actions: {
+    handles: ['mouseover', 'click button'],
+  },
+  argTypes: {
+    children: { control: 'text' },
+  },
+}
 
 
 export const PrimaryButton = () => (
@@ -60,7 +69,7 @@ export const PrimaryButton = () => (
     disabled={false}
     type={"primary"}
     fullWidth={true}
-    onClick={() => console.log('Button Clicked')}
+    onClick={action("clicked")}
     >
     Primary
   </Button>
@@ -71,7 +80,7 @@ export const SecondaryButton = () => (
     disabled={false}
     type="secondary"
     fullWidth={true}
-    onClick={() => console.log('Button Clicked')}
+    onClick={action("clicked")}
     >
     Secondary
   </Button>

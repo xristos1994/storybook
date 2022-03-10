@@ -1,0 +1,7 @@
+.counter {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid purple;
+  width: fit-content;
+}

@@ -1,8 +1,15 @@
 import PropTypes from 'prop-types';
-import { classnames } from './../../utils/classnames';
+import { classnames } from './../../utils/classnames/classnames';
 import styles from './styles.module.css';
 
-export const Button = ({type, fullWidth, className, disabled, onClick, children}) => {
+export const Button = ({
+  type,
+  fullWidth,
+  className,
+  disabled,
+  onClick,
+  children
+}) => {
   return (
     <button
       disabled={disabled}

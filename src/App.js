@@ -1,17 +1,9 @@
-import { Button } from './components/Button/Button';
+import { MainPage } from './components/MainPage/MainPage';
 
 const App = () => {
   return (
     <div className="App">
-      AAA
-      <Button
-        disabled={true}
-        type="secondary"
-        fullWidth={true}
-        onClick={() => console.log('Button Clicked')}
-      >
-        Primary
-      </Button>
+      <MainPage />
     </div>
   );
 }

@@ -29,3 +29,185 @@ exports[`Snapshots storyshots Button Secondary Button 1`] = `
   Secondary
 </button>
 `;
+
+exports[`Snapshots storyshots Counter Counter With Controls 1`] = `
+<div
+  className="counter"
+>
+  <button
+    className="button primary"
+    disabled={false}
+    onClick={[Function]}
+  >
+    -
+  </button>
+  <h3>
+    6
+  </h3>
+  <button
+    className="button primary"
+    disabled={false}
+    onClick={[Function]}
+  >
+    +
+  </button>
+  <br />
+  <button
+    className="button primary"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Reset
+  </button>
+</div>
+`;
+
+exports[`Snapshots storyshots Counter Default Counter 1`] = `
+<div
+  className="counter"
+>
+  <button
+    className="button primary"
+    disabled={false}
+    onClick={[Function]}
+  >
+    -
+  </button>
+  <h3>
+    0
+  </h3>
+  <button
+    className="button primary"
+    disabled={false}
+    onClick={[Function]}
+  >
+    +
+  </button>
+  <br />
+  <button
+    className="button primary"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Reset
+  </button>
+</div>
+`;
+
+exports[`Snapshots storyshots MainPage Default Main Page 1`] = `
+<div
+  className="mainPage"
+>
+  <div
+    className="counterContainer"
+  >
+    <button
+      className="button secondary"
+      disabled={false}
+      onClick={[Function]}
+    >
+      Disable Counter
+    </button>
+    <div
+      className="counter"
+    >
+      <button
+        className="button primary"
+        disabled={false}
+        onClick={[Function]}
+      >
+        -
+      </button>
+      <h3>
+        10
+      </h3>
+      <button
+        className="button primary"
+        disabled={false}
+        onClick={[Function]}
+      >
+        +
+      </button>
+      <br />
+      <button
+        className="button primary"
+        disabled={false}
+        onClick={[Function]}
+      >
+        Reset
+      </button>
+    </div>
+  </div>
+  <div
+    className="timerContainer"
+  >
+    <div
+      className="timer"
+    >
+      <h3>
+        00h 00m 00s 
+      </h3>
+      <div
+        className="actions"
+      >
+        <button
+          className="button primary"
+          disabled={false}
+          onClick={[Function]}
+        >
+          Start
+        </button>
+        <button
+          className="button primary"
+          disabled={false}
+          onClick={[Function]}
+        >
+          Stop
+        </button>
+        <button
+          className="button primary"
+          disabled={false}
+          onClick={[Function]}
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshots storyshots Timer Default Timer 1`] = `
+<div
+  className="timer"
+>
+  <h3>
+    00h 00m 00s 
+  </h3>
+  <div
+    className="actions"
+  >
+    <button
+      className="button primary"
+      disabled={false}
+      onClick={[Function]}
+    >
+      Start
+    </button>
+    <button
+      className="button primary"
+      disabled={false}
+      onClick={[Function]}
+    >
+      Stop
+    </button>
+    <button
+      className="button primary"
+      disabled={false}
+      onClick={[Function]}
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;

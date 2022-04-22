@@ -15,18 +15,12 @@ const story = {
   title: 'Button',
   component: Button,
   parameters: {
-    // actions: {
-    //   handles: ['mouseover', 'click button'],
-    // },
-    // argTypes: {
-    //   children: { control: 'text' },
-    // },
     docs: {
       page: () => (
         <>
           <Title>Button Story</Title>
           <Subtitle>Button</Subtitle>
-          <Description>This is thr description of the story!</Description>
+          <Description>This is the story of the button!</Description>
           <Primary name="Primary Button" />
           <ArgsTable story={PRIMARY_STORY} />
           <Stories title="Other Stories" includePrimary={true} />

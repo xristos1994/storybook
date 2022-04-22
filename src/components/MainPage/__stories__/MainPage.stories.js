@@ -20,9 +20,9 @@ const story = {
           <Title>Main Page Story</Title>
           <Subtitle>Main Page</Subtitle>
           <Description>This is the story of the Main Page!</Description>
-          <Primary name="Main Page" />
+          <Primary name="Default Main Page" />
           <ArgsTable story={PRIMARY_STORY} />
-          <Stories title="Other Stories" includePrimary={true} />
+          <Stories title="Other Stories" includePrimary={false} />
         </>
       ),
     },

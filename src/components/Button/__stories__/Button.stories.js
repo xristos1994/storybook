@@ -21,9 +21,9 @@ const story = {
           <Title>Button Story</Title>
           <Subtitle>Button</Subtitle>
           <Description>This is the story of the button!</Description>
-          <Primary name="Primary Button" />
+          <Primary name="Button With Controls" />
           <ArgsTable story={PRIMARY_STORY} />
-          <Stories title="Other Stories" includePrimary={true} />
+          <Stories title="Other Stories" includePrimary={false} />
         </>
       ),
     },

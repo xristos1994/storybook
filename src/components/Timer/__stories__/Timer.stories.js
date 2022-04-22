@@ -20,9 +20,9 @@ const story = {
           <Title>Timer Story</Title>
           <Subtitle>Timer</Subtitle>
           <Description>This is the story of the Timer!</Description>
-          <Primary name="Timer" />
+          <Primary name="Default Timer" />
           <ArgsTable story={PRIMARY_STORY} />
-          <Stories title="Other Stories" includePrimary={true} />
+          <Stories title="Other Stories" includePrimary={false} />
         </>
       ),
     },
@@ -35,4 +35,8 @@ export const DefaultTimer = () => (
   <Timer />
 );
 
+
+DefaultTimer.parameters = {
+  controls: { hideNoControlsWarning: true },
+}
 

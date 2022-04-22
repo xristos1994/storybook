@@ -20,9 +20,9 @@ const story = {
           <Title>Counter Story</Title>
           <Subtitle>Counter</Subtitle>
           <Description>This is the story of the Counter!</Description>
-          <Primary name="Counter" />
+          <Primary name="Counter With Controls" />
           <ArgsTable story={PRIMARY_STORY} />
-          <Stories title="Other Stories" includePrimary={true} />
+          <Stories title="Other Stories" includePrimary={false} />
         </>
       ),
     },
@@ -50,9 +50,8 @@ CounterWithControls.args = {
 };
 
 CounterWithControls.parameters = {
-  controls: { exclude: ['initialValue'] },
   argTypes: {
-    initialValue: { control: 'number' },
+    initialValue: { control: 'number', disable: true },
     minValue: { control: 'number' },
     maxValue: { control: 'number' },
     step: { control: 'number' }

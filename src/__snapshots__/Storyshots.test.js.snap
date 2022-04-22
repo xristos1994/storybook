@@ -22,7 +22,7 @@ exports[`Snapshots storyshots Button Primary Button 1`] = `
 
 exports[`Snapshots storyshots Button Secondary Button 1`] = `
 <button
-  className="button secondary fullWidth"
+  className="button secondary"
   disabled={false}
   onClick={[Function]}
 >

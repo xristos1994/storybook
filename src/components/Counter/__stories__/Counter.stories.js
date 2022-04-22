@@ -63,3 +63,7 @@ export const DefaultCounter = () => (
   <Counter />
 );
 
+DefaultCounter.parameters = {
+  controls: { hideNoControlsWarning: true },
+}
+

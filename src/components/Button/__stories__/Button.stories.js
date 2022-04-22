@@ -69,13 +69,21 @@ export const PrimaryButton = () => (
   </Button>
 );
 
+PrimaryButton.parameters = {
+  controls: { hideNoControlsWarning: true },
+}
+
 export const SecondaryButton = () => (
   <Button
     disabled={false}
     type="secondary"
-    fullWidth={true}
+    fullWidth={false}
     onClick={action("clicked")}
     >
     Secondary
   </Button>
 );
+
+SecondaryButton.parameters = {
+  controls: { hideNoControlsWarning: true },
+}

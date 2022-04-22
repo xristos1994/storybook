@@ -35,4 +35,9 @@ export const DefaultMainPage = () => (
   <MainPage />
 );
 
+DefaultMainPage.parameters = {
+  controls: { hideNoControlsWarning: true },
+}
+
+
 

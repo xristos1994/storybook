@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Button } from '../Button/Button';
 import { Counter } from '../Counter/Counter';
+import { Timer } from '../Timer/Timer';
 import styles from './styles.module.css';
 
 export const MainPage = () => {
@@ -22,6 +23,11 @@ export const MainPage = () => {
           disabled={!isCounterEnabled}
         />
       </div>
+
+      <div className={styles.timerContainer}>
+        <Timer initialIsRunning={false}/>
+      </div>
+
     </div>
   );
 }

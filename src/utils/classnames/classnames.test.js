@@ -1,6 +1,6 @@
 import { classnames } from './classnames';
 
-describe('utils/strings/classnames', () => {
+describe('utils/classnames', () => {
   it('returns empty string if no arguments passed', () => {
     expect(classnames()).toBe('');
   });

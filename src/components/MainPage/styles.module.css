@@ -1,4 +1,7 @@
 .mainPage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   padding: 8px;
   background-color: bisque;
   min-height: 100vh;
@@ -7,6 +10,7 @@
 
 .counterContainer {
   width: fit-content;
+  height:fit-content;
   border: 3px solid blue;
   padding: 8px;
   display: flex;
@@ -14,4 +18,12 @@
   align-items: center;
   gap: 16px;
   background-color: aqua;
+}
+
+.timerContainer {
+  width: fit-content;
+  height:fit-content;
+  border: 3px solid gray;
+  padding: 8px;
+  background-color: yellow;
 }

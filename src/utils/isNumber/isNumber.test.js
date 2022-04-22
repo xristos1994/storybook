@@ -1,6 +1,6 @@
 import { isNumber } from './isNumber';
 
-describe('is/isNumber', function () {
+describe('utils/isNumber', function () {
   it('checks if a value is number', function () {
     expect(isNumber(404)).toBe(true);
 

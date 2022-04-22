@@ -14,6 +14,10 @@ export const Counter = ({
   className
 }) => {
   const [value, setValue] = useState(initialValue);
+
+  const reset = () => {
+    setValue(initialValue);
+  }
   return (
    <div
       className={classnames(styles.counter, {
@@ -38,6 +42,16 @@ export const Counter = ({
         disabled={disabled}
       >
         +
+      </Button>
+
+      <br />
+
+      <Button
+        type="primary"
+        onClick={reset}
+        disabled={disabled}
+      >
+        Reset
       </Button>
    </div>
   );

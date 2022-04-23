@@ -9,6 +9,7 @@ import {
   PRIMARY_STORY,
 } from '@storybook/addon-docs';
 import { action } from "@storybook/addon-actions";
+import { linkTo } from '@storybook/addon-links';
 import { Button } from './../Button';
 
 const story = {
@@ -63,7 +64,10 @@ export const PrimaryButton = () => (
     disabled={false}
     type={"primary"}
     fullWidth={true}
-    onClick={action("clicked")}
+    onClick={() => {
+      action("primary clicked")();
+      linkTo('Button', 'Secondary Button')()
+    }}
     >
     Primary
   </Button>
@@ -78,7 +82,10 @@ export const SecondaryButton = () => (
     disabled={false}
     type="secondary"
     fullWidth={false}
-    onClick={action("clicked")}
+    onClick={() => {
+      action("secondary clicked")();
+      linkTo('Button', 'Primary Button')()
+    }}
     >
     Secondary
   </Button>

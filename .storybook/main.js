@@ -14,6 +14,7 @@ module.exports = {
     '@storybook/addon-viewport',
     '@storybook/addon-storysource',
     '@storybook/addon-measure',
-    '@storybook/addon-outline'
+    '@storybook/addon-outline',
+    '@storybook/addon-links'
   ],
 };

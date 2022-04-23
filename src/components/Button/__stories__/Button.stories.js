@@ -66,7 +66,10 @@ export const PrimaryButton = () => (
     fullWidth={true}
     onClick={() => {
       action("primary clicked")();
-      linkTo('Button', 'Secondary Button')()
+      console.log('Redirection to Secondary Button in 3 seconds')
+      setTimeout(() => {
+        linkTo('Button', 'Secondary Button')()
+      }, 3000)
     }}
     >
     Primary
@@ -84,7 +87,10 @@ export const SecondaryButton = () => (
     fullWidth={false}
     onClick={() => {
       action("secondary clicked")();
-      linkTo('Button', 'Primary Button')()
+      console.log('Redirection to Primary Button in 3 seconds')
+      setTimeout(() => {
+        linkTo('Button', 'Primary Button')()
+      }, 3000)
     }}
     >
     Secondary
